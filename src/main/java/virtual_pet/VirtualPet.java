@@ -35,9 +35,9 @@ public void setBored(int b) {
     Bored = b;
 }
 public void modifyHunger ( int h) {
-    Hunger += h;}
+    Hunger += h;
 }
-public void modifySleepy ( int s) {
+public static void modifySleepy  ( int s) {
     Sleepy += s;
 }
 public void modifyBored ( int b) {
