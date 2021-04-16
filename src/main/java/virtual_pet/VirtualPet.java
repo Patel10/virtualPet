@@ -54,17 +54,17 @@ public class VirtualPet {
         sleepy += s;
     }
 
-    public void updateHunger(int h) {
-        bored += h;
+    public void updateHunger(int h) { hunger += h;
     }
-    public void updateBored(int b ) {
-
+    public void updateBored(int b ) { bored += b;
     }
-
+    public void feed(int f) { updateHunger(f);}
+    public void rest(int r) { updateSleepy(r);}
+    public void play(int p) { updateBored(p);}
     public void tick() {
-        updateSleepy(+3);
-        updateHunger(+3);
-        updateBored(+3);
+        updateSleepy(1);
+        updateHunger(1);
+        updateBored(1);
 
 
 
